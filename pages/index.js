@@ -43,7 +43,7 @@ const Home = () => {
             <h1>SEO Keyword generator</h1>
           </div>
           <div className="header-subtitle">
-            <h2>insert your blog title here and we'll optimize it </h2>
+            <h2>insert your blog title here and we'll optimize it & write a short blog post!</h2>
           </div>
         </div>
         <div className="prompt-container">
