@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import buildspaceLogo from "../assets/buildspace-logo.png";
+//import buildspaceLogo from "../assets/buildspace-logo.png";
+import blocverseLogo from "../assets/blocverse-logo.png";
 
 const Home = () => {
   const [userInput, setUserInput] = useState("");
@@ -81,13 +82,13 @@ const Home = () => {
       </div>
       <div className="badge-container grow">
         <a
-          href="https://buildspace.so/builds/ai-writer"
+          href="https://blocverse.com/"
           target="_blank"
           rel="noreferrer"
         >
           <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
+            <Image src={blocverseLogo} alt="buildspace logo" />
+            <p>built for Blocverse!</p>
           </div>
         </a>
       </div>
