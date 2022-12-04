@@ -5,7 +5,7 @@ const configuration = new Configuration({
 });
 
 const openai = new OpenAIApi(configuration);
-const basePromptPrefix = `Generate 15 SEO-optimized blog titles for
+const basePromptPrefix = `Generate 7 SEO-optimized blog titles for
 Title:`;
 const generateAction = async (req, res) => {
   // Run first prompt
@@ -21,7 +21,7 @@ const generateAction = async (req, res) => {
   const basePromptOutput = baseCompletion.data.choices.pop();
 
   // I build Prompt #2.
-  const secondPrompt = `
+  /* const secondPrompt = `
   Take each of the 15 SEO-optimized blog titles and write a blog post on each of them.
   Title: ${req.body.userInput}
   Keywords generated: ${basePromptOutput.text}
@@ -39,8 +39,8 @@ const generateAction = async (req, res) => {
   });
   
   const secondPromptOutput = secondPromptCompletion.data.choices.pop();
-
-  res.status(200).json({ output: secondPromptOutput });
+ */
+  res.status(200).json({ output:  basePromptOutput });
 };
 
 export default generateAction;
